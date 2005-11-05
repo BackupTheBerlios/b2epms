@@ -1,0 +1,32 @@
+Currently there is only a rudimentary installation system for b2ePMS. All that
+it will do is create your database tables and your administrator. The
+installation system does not create a database, you must do that prior to
+following these instructions.
+
+Installation:
+-------------------------------------------------------------------------------
+
+1.	Untar/bunzip the file b2epms-x.x.tar.bz2 into your web directory:
+
+	tar xvfj b2epms-x.x.tar.bz2
+
+	This will create a directory called b2epms-x.x. You can move/rename
+	this directory to whatever you want or put its subdirectories/files
+	under the root web directory.
+
+2.	Point your web browser to http://where_you_put_b2epms/install/. Fill
+	in the required blanks for the Database and Administrator and click
+	"Install Now".
+
+3.	Assuming everything turned up successful, Click on the "Admin Center"
+	link and proceed with creating your users.
+
+4.	Open includes/common.inc and modify to reflect your site.
+
+5.	IMPORTANT! Be sure to delete the entire install directory, otherwise
+	your message system will not work.
+
+Currently there is no facility for modifying anything about the page layout
+including headers and footers. If you have gotten this far you should be
+able to modify those by hand. Eventually the Administration system
+will handle the editing of the files you had to modify by hand.

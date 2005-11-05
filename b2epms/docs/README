@@ -1,0 +1,26 @@
+b2ePMS stands for Browser to Email Phone Message System. It is intended to
+replace the standard paper/carbon phone message slips commonly used in offices,
+with the capability of sending the message via a web browser form directly to
+the recipients inbox. b2ePMS will have the capability to run searches based on
+date, recipient, caller, and message sender. The capability to have messages
+marked as private, so that only the sender and recipient have access to that 
+message is also planned.
+
+This software is in a beta testing state, and should be treated as such. If you
+choose to test/use b2ePMS, you do so at your own risk. I will not be
+responsible if you get hacked, destroy data, or if your computer explodes. No
+security auditing has been done on b2ePMS as of yet! All of that being said,
+this system is currently running on a production system in our office without
+a hiccup for 6 months now.
+
+BUT, YOU HAVE BEEN WARNED!
+
+b2ePMS requires a Linux server running Apache/PHP/MySQL and a functioning
+mailserver. I test/develop on Ubuntu 5.10 using Apache 2.0.54, PHP 5.0.5, and
+MySQL 4.0.24. If you get b2ePMS working under a different OS/version, please
+let me know. If it doesn't work with your system, let me know about that too. I
+may not do anything about it, but then again who knows :-). If you get b2ePMS
+working on a system that it had problems on, please send the code and I will
+try to get it incorporated into the next release (along with your name in the
+contributors/developers list).
+

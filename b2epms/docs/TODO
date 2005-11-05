@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+TODO items
+-------------------------------------------------------------------------------
+
+*	Work on the search function, which quit paginating the results after
+	the upgrade to Apache2.
+
+*	Add additional search capabilities: date, sender, caller.
+
+* 	Work on the capability to allow login to check messages marked as
+	private.
+
+*	Way more than I can possibly describe here yet.
+
+*	Make the installer create the database.
+
+*	Add a check to the new user creation to make sure that the user doesn't
+	already exist.
