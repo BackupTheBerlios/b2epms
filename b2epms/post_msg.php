@@ -12,6 +12,10 @@ $msg_options = $_POST['msg_options'];
 // $msg_private = $_POST['msg_private'];
 $msg_recipients = @implode(',', $_POST['msg_recipients']);
 $signed = $_POST['signed'];
+$sql = "SELECT * FROM b2epms_user WHERE username='$msg_recipients'";
+$result = mysql_query($sql);
+$row=mysql_fetch_array($result);
+$email_address = $row['email_address'];
 // Lets error check to get rid of the bounces for no recipient
 if(!$msg_recipients){
 echo '<p><span style="color:red; font-size:2em"><strong>You must select at least one recipient!</strong></span></p>';
@@ -52,7 +56,10 @@ $signed
 This is an automated message, please do not reply! 
 ";
 mail($msg_recipients, $subject, $message, $header);	
-// Let's thank the user and send them back to the blog// This is not a very elegant method and is not xhtml 1.0 strict compliant// but it works for now.// Fixing this needs to be in the TODO file
+// Let's thank the user and send them back to the message center
+// This is not a very elegant method and is not xhtml 1.0 strict compliant
+// but it works for now.
+// Fixing this needs to be in the TODO file
 echo '<head>';
 echo '<META HTTP-EQUIV="Refresh" CONTENT="5;URL=./index.php">';
 echo '</head>';
