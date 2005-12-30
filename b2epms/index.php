@@ -9,14 +9,14 @@ include './includes/dbconnect.php';
         <legend>New Phone Message</legend>
          <span style="font-size: small;">
         Phone number<br />
-        <input type="text" name="phone_number" size="14" maxlength="14" value="<? echo $phone_number; ?>" /><br /><br />
+        <input type="text" name="phone_number" size="14" maxlength="14" id="phone_number" value="<? echo $phone_number; ?>" /><br /><br />
         Caller name<br />
-        <input type="text" name="msg_caller" size="50" maxlength="50" value="<? echo $msg_caller; ?>" /><br /><br />
+        <input type="text" name="msg_caller" size="50" maxlength="50" id="msg_caller" value="<? echo $msg_caller; ?>" /><br /><br />
         Message<br />
-        <textarea name="phone_msg" rows="4" cols="50"><? echo $phone_msg; ?></textarea><br /><br />
-       	&nbsp;<input type="radio" name="msg_options" value="Please call" />Please call&nbsp;
-	    <input type="radio" name="msg_options" value="Will call back" />Will call back&nbsp;
-	    <!-- This needs to be working in the next release <span style="color: red; font-weight:bold; "><input type="checkbox" name="msg_private[]" value="Private" />Private</span> -->
+	<textarea name="phone_msg" rows="4" cols="50" id="phone_msg"><? echo $phone_msg; ?></textarea><br /><br />
+	&nbsp;<input type="radio" name="msg_options" value="Please call" id="please_call" checked />Please call&nbsp;
+	<input type="radio" name="msg_options" value="Will call back" id="will_call_back" />Will call back&nbsp;
+	<!-- This needs to be working in the next release <span style="color: red; font-weight:bold; "><input type="checkbox" name="msg_private[]" value="Private" />Private</span> -->
 <br /><br />
 Message Recipient
 </span>
