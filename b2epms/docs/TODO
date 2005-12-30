@@ -3,7 +3,8 @@ TODO items
 -------------------------------------------------------------------------------
 
 *	Work on the search function, which quit paginating the results after
-	the upgrade to Apache2.
+	the upgrade to Apache2. (I have added a limited search function that
+	will allow you to search by user without any pagination).
 
 *	Add additional search capabilities: date, sender, caller.
 
