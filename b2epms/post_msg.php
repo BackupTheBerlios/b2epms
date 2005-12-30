@@ -55,7 +55,7 @@ $signed
 ********************************************************************
 This is an automated message, please do not reply! 
 ";
-mail($msg_recipients, $subject, $message, $header);	
+mail($email_address, $subject, $message, $header);	
 // Let's thank the user and send them back to the message center
 // This is not a very elegant method and is not xhtml 1.0 strict compliant
 // but it works for now.
