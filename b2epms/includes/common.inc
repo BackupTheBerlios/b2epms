@@ -10,7 +10,7 @@ $site_description = ' ::  Phone Message System';
 // Url for the phone message system
 $site_url = 'http://192.168.111.45/b2epms/';
 // Site administrators email address
-$admin_email = 'bcabunac@bejarch.com';
+$admin_email = 'admin@yoursite.com';
 // Footer copyright - DON'T CHANGE THIS
 $copyright = 'Powered by: <a href="http://b2epms.berlios.de">b2ePMS-1.0</a> &copy; 2005-2009<br />b2ePMS is Free Software released under the <a href="http://www.gnu.org/licenses/gpl.txt">GNU/GPL license</a>';
 // XHTML compliance indicator
