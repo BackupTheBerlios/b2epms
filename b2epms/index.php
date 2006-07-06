@@ -16,6 +16,7 @@ include './includes/dbconnect.php';
 	<textarea name="phone_msg" rows="4" cols="50" id="phone_msg"><? echo $phone_msg; ?></textarea><br /><br />
 	&nbsp;<input type="radio" name="msg_options" value="Please call" id="please_call" checked />Please call&nbsp;
 	<input type="radio" name="msg_options" value="Will call back" id="will_call_back" />Will call back&nbsp;
+	<input type="radio" name="msg_options" value="Returned your call" id="returned_your_call" />Returned your call&nbsp;
 	<!-- This needs to be working in the next release <span style="color: red; font-weight:bold; "><input type="checkbox" name="msg_private[]" value="Private" />Private</span> -->
 <br /><br />
 Message Recipient
@@ -34,7 +35,7 @@ while($row = mysql_fetch_array($result)){
 // Begin your formatted output
 echo '<td>';
 echo '<span style="font-size: small;">';
-echo '<input type="checkbox" name="msg_recipients[]" value="'.$row["username"].'" />';
+echo '<input type="checkbox" name="msg_recipients[]" value="'.$row["email_address"].'" />';
 echo '&nbsp;';
 echo($row["last_name"]);
 echo ', ';
