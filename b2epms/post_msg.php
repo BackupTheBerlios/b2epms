@@ -15,7 +15,6 @@ $signed = $_POST['signed'];
 $sql = "SELECT * FROM b2epms_user WHERE username='$msg_recipients'";
 $result = mysql_query($sql);
 $row=mysql_fetch_array($result);
-$email_address = $row['email_address'];
 // Lets error check to get rid of the bounces for no recipient
 if(!$msg_recipients){
 echo '<p><span style="color:red; font-size:2em"><strong>You must select at least one recipient!</strong></span></p>';
@@ -32,7 +31,7 @@ $date = date("m-d-Y g:i:s a", strtotime($row['phone_msg_date']));
 if(!$sql){
 	die("<img src='./images/fail.png' width='12' height='12' border='0' name='fail.png' alt='Fail'>&nbsp;&nbsp;" . mysql_error());
 } else {
-$userid = mysql_insert_id();
+// $userid = mysql_insert_id();
 // Mail the phone message
     $subject = "***PHONE MESSAGE***";
     $header = "FROM: b2ePMS<b2ePMS> \n";
@@ -41,9 +40,9 @@ $userid = mysql_insert_id();
 Date/Time:  $date
 
     Caller:  $msg_caller
-    
+
     Message:  $phone_msg
-	
+
     Action:  $msg_options
 
     Phone Number:  $phone_number
@@ -55,8 +54,8 @@ $signed
 ********************************************************************
 This is an automated message, please do not reply! 
 ";
-mail($email_address, $subject, $message, $header);	
-// Let's thank the user and send them back to the message center
+mail($msg_recipients, $subject, $message, $header);
+// Let's thank the user and send them back to the blog
 // This is not a very elegant method and is not xhtml 1.0 strict compliant
 // but it works for now.
 // Fixing this needs to be in the TODO file
