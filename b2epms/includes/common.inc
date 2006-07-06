@@ -8,7 +8,7 @@ $image_webhome	= '<a href="./index.php"><img src="./images/logo.png" title="b2ep
 $site_name	= 'b2ePMS';
 $site_description = ' ::  Phone Message System';
 // Url for the phone message system
-$site_url = 'http://192.168.111.45/b2epms/';
+$site_url = 'http://yoursite.com/b2epms/';
 // Site administrators email address
 $admin_email = 'admin@yoursite.com';
 // Footer copyright - DON'T CHANGE THIS
