@@ -17,7 +17,7 @@ echo '</head>';
 include 'includes/common.inc';
 include_once 'includes/header.inc';
 echo "<p><strong>You are now logged out!</strong></p>";
-echo "<p>Please wait while we return you to the '$site_name $site_description'.</p>";
+echo "<p>Please wait while we return you to the $site_name $site_description.</p>";
 include_once 'includes/footer.inc';
 	}
 }
