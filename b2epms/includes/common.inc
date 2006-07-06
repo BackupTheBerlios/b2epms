@@ -5,14 +5,14 @@
 // Location and URL of phone message system index and logo
 $image_webhome	= '<a href="./index.php"><img src="./images/logo.png" title="b2epms" alt="logo.png" style="border: 0px solid ;" /></a>';
 // Name & Description of the phone message system
-$site_name	= 'b2ePMS.';
+$site_name	= 'b2ePMS';
 $site_description = ' ::  Phone Message System';
 // Url for the phone message system
-$site_url = 'http://your_url';
+$site_url = 'http://192.168.111.45/b2epms/';
 // Site administrators email address
-$admin_email = 'admin@your_url.com';
+$admin_email = 'bcabunac@bejarch.com';
 // Footer copyright - DON'T CHANGE THIS
-$copyright = 'Powered by: <a href="http://b2epms.berlios.de">b2ePMS-0.1</a> &copy; 2005-2009<br />b2ePMS is Free Software released under the <a href="http://www.gnu.org/licenses/gpl.txt">GNU/GPL license</a>';
+$copyright = 'Powered by: <a href="http://b2epms.berlios.de">b2ePMS-1.0</a> &copy; 2005-2009<br />b2ePMS is Free Software released under the <a href="http://www.gnu.org/licenses/gpl.txt">GNU/GPL license</a>';
 // XHTML compliance indicator
 $xhtml_compliance = '<a href="http://validator.w3.org/check?uri=referer"><img src="./images/vxhtml10.png" alt="Valid XHTML 1.0!" height="31" width="88" style="border-style:none" /></a>';
 // Open the table for the site name/description
